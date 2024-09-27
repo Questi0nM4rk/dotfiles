@@ -1,0 +1,58 @@
+# ~/.zshrc
+
+# Enable Powerlevel10k instant prompt
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Set up the prompt
+autoload -Uz promptinit
+promptinit
+prompt adam1
+
+# Use modern completion system
+autoload -Uz compinit
+compinit
+
+# Enable syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Enable autosuggestions
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Enable history substring search
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# Bind keys for history substring search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# Set up zoxide
+eval "$(zoxide init zsh)"
+
+# Aliases
+alias c='clear'
+alias src='source ~/.zshrc'
+
+export PATH="$HOME/.gem/ruby/3.2.0/bin:$PATH"
+alias ls='colorls -A --gs --sd'
+alias ll='colorls -A --gs --sd -l'
+alias lt='colorls -A --gs --tree'
+
+alias cd='z'
+
+alias tmux='tmux -f ~/.config/tmux/tmux.conf'
+
+export EDITOR=nvim    # or vim, nano, etc.
+export VISUAL=nvim
+
+source /home/qs_m4rk/.gem/ruby/3.2.0/gems/colorls-1.5.0/lib/tab_complete.sh
+
+# Powerlevel10k theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+

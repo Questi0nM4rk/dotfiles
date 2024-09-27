@@ -1,0 +1,43 @@
+# Ignore Chezmoi's state files
+.chezmoistate.bak
+.chezmoistate.toml
+
+# Ignore temporary files
+*~
+*.swp
+*.swo
+
+# Ignore potential secrets or sensitive information
+.ssh/id_*
+.ssh/*_id_*
+.gnupg
+.password-store
+
+# Ignore local machine-specific files
+.local/share/chezmoi/machine-specific.toml
+
+# Ignore potential large directories
+**/.Trash
+**/.cache
+
+# Ignore potential sensitive application data
+.config/discord
+.config/spotify
+
+# Ignore version control directories
+**/.git
+**/.svn
+**/.hg
+
+# Ignore logs
+*.log
+
+# Ignore compiled Python files
+*.pyc
+__pycache__
+
+# Ignore Node.js dependencies
+node_modules
+
+# Ignore macOS specific files
+.DS_Store

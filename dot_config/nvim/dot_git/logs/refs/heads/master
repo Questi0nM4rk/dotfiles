@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 fa35bd55f85621f72789090fbdd7a82f76eba849 Questi0nM4rk <56120540+Questi0nM4rk@users.noreply.github.com> 1727383918 +0200	commit (initial): Initial commit of nvim configs
+fa35bd55f85621f72789090fbdd7a82f76eba849 6660f1148189401e1beec87c486c203bea67a052 Questi0nM4rk <56120540+Questi0nM4rk@users.noreply.github.com> 1727389097 +0200	commit: nvim: fixed undo_config
+6660f1148189401e1beec87c486c203bea67a052 665abd441c6f8be0951781c5e99fed2a82727dbd Questi0nM4rk <56120540+Questi0nM4rk@users.noreply.github.com> 1727389380 +0200	commit (merge): nvim: fixed undo_config
+665abd441c6f8be0951781c5e99fed2a82727dbd 589c154c02cd34612b6270363010b1b623f87a81 Questi0nM4rk <56120540+Questi0nM4rk@users.noreply.github.com> 1727442131 +0200	commit: nvim: add remote-sshfs
+589c154c02cd34612b6270363010b1b623f87a81 fe53fc43a84b39508c433de5e94b2f3485e6865b Questi0nM4rk <56120540+Questi0nM4rk@users.noreply.github.com> 1727444695 +0200	commit: nvim: moved undo_config to lua folder
+fe53fc43a84b39508c433de5e94b2f3485e6865b d24f0f046092486276ab1d524f27c451e9ef4279 Questi0nM4rk <56120540+Questi0nM4rk@users.noreply.github.com> 1727456744 +0200	commit: nvim: add more plugins
