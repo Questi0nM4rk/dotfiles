@@ -1,3 +1,7 @@
+# Ignore git stuff
+.git
+dot_git
+
 # Ignore Chezmoi's state files
 .chezmoistate.bak
 .chezmoistate.toml
